@@ -1,5 +1,5 @@
 import torch
-from methods.min_delay import MIN
+from methods.max_reward import MIN
 from envs.env1 import RoadState
 import random
 import sys,os

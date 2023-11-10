@@ -7,7 +7,7 @@ from utils import plot_time_delay, plot_costs1, plot_rewards_algo_version
 from utils import save_rewards, save_delays, save_costs, save_bat_life
 from envs.config1 import VehicularEnvConfig
 
-from methods.min_delay_algo import MINConfig, TrainAndTestMIN
+from methods.max_reward_algo import MINConfig, TrainAndTestMIN
 
 from methods.ppo_task1 import PPOConfig, TrainAndTestPPO
 import traceback
