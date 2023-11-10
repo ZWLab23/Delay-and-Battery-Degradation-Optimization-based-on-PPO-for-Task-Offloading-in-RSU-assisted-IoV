@@ -166,7 +166,7 @@ def plot_time_delay(min_time_delay, ppo_time_delay, cfg, tag="train"):
     plt.ylabel('average task delay',fontsize=12)
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.plot(ppo_time_delay, label='ppo')
-    plt.plot(min_time_delay, label='min_reward')
+    plt.plot(min_time_delay, label='min_time_delay')
     plt.legend(edgecolor="none",fontsize=12)
     plt.tight_layout()
     if cfg.save:
@@ -306,7 +306,7 @@ def plot_rewards_algo_version(min_rewards, ppo_rewards, cfg, tag="train"):
     plt.ylabel('average reward',fontsize=12)
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.plot(ppo_rewards, label='ppo')
-    plt.plot(min_rewards, label='min_reward')
+    plt.plot(min_rewards, label='max_reward')
     plt.legend(edgecolor="none",fontsize=12)
     plt.tight_layout()
     if cfg.save:
@@ -322,7 +322,7 @@ def plot_costs1(min_costs, ppo_costs, cfg, tag="train"):
     plt.ylabel('average battery degradation cost',fontsize=12)
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.plot(ppo_costs, label='ppo')
-    plt.plot(min_costs, label='min_reward')
+    plt.plot(min_costs, label='min_costs')
     plt.legend(edgecolor="none",fontsize=12)
     plt.tight_layout()
     if cfg.save:
@@ -338,7 +338,7 @@ def plot_bat_life1(min_bat_life, ppo_bat_life, cfg, tag="train"):
     plt.ylabel('average bat life(*1e+9)',fontsize=12)
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.plot(ppo_bat_life, label='ppo')
-    plt.plot(min_bat_life, label='min_reward')
+    plt.plot(min_bat_life, label='min_bat_life')
     plt.legend(edgecolor="none",fontsize=12)
     plt.tight_layout()
     if cfg.save:
